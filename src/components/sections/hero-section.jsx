@@ -10,7 +10,7 @@ export function HeroSection() {
             Hey ! C{"'"}est moi, Farihane.
           </p>
           <h1 className="text-4xl md:text-5xl font-title lg:text-6xl font-medium leading-tight mb-8">
-            Concevoir des <span className="text-accent">expériences significatives</span> qui inspirent et engagent.
+            Je conçois des <span className="text-accent">expériences significatives</span> qui inspirent et engagent.
           </h1>
         </div>
 

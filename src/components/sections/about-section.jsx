@@ -1,4 +1,5 @@
 import { SectionBadge } from "../section-badge"
+import profile from "../../assets/profile3.jpg"
 
 export function AboutSection() {
   return (
@@ -8,7 +9,7 @@ export function AboutSection() {
           {/* Photo */}
           <div className="relative aspect-square rounded-2xl overflow-hidden bg-secondary">
             <img
-              src="/src/assets/profile3.jpg"
+              src={profile}
               alt="Farihane S. ZANNOU"
               className="w-full h-full object-cover"
             />
