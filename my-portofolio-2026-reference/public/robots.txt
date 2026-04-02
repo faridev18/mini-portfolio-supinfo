@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://farihane.com/sitemap.xml
