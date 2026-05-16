@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { SectionBadge } from "../section-badge"
 import { Mail } from "lucide-react"
 
@@ -19,140 +18,40 @@ const TwitterIcon = (props) => (
 )
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/in/farihane-zannou-708475215/", icon: LinkedinIcon, label: "LinkedIn" },
-  { href: "https://github.com/faridev18", icon: GithubIcon, label: "GitHub" },
-  { href: "https://www.instagram.com/farihane.zannou/", icon: InstagramIcon, label: "Instagram" },
-  { href: "mailto:farihane@farihane.com", icon: Mail, label: "Email" },
-  { href: "https://twitter.com/farihane_z", icon: TwitterIcon, label: "Twitter" },
+  { href: "https://www.linkedin.com/in/prince-degboe/", icon: LinkedinIcon, label: "LinkedIn" },
+  { href: "https://github.com/prince-degboe", icon: GithubIcon, label: "GitHub" },
+  { href: "https://www.instagram.com/prince.degboe/", icon: InstagramIcon, label: "Instagram" },
+  { href: "mailto:prince.degboe@email.com", icon: Mail, label: "Email" },
+  { href: "https://twitter.com/prince_degboe", icon: TwitterIcon, label: "Twitter" },
 ]
 
 export function ContactSection() {
-  const [submitted, setSubmitted] = useState(false)
-  const [formData, setFormData] = useState({
-    nom: "",
-    email: "",
-    sujet: "",
-    message: "",
-  })
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setSubmitted(true)
-    setFormData({ nom: "", email: "", sujet: "", message: "" })
-  }
-
   return (
     <section id="contact" className="py-20 md:py-32">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left - Form */}
+          {/* Left */}
           <div>
             <SectionBadge>Contact</SectionBadge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-title font-medium mt-4 mb-8">
               Démarrons un projet ensemble
             </h2>
-
-            {submitted ? (
-              <div className="text-center py-12">
-                <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-accent">&#10003;</span>
-                </div>
-                <h3 className="text-xl font-medium mb-2">Message envoyé !</h3>
-                <p className="text-muted-foreground">
-                  Merci pour votre message. Je vous répondrai dans les plus brefs délais.
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="mt-4 text-sm text-accent hover:underline cursor-pointer"
-                >
-                  Envoyer un autre message
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <label htmlFor="nom" className="block text-sm font-medium">
-                    Nom complet
-                  </label>
-                  <input
-                    id="nom"
-                    name="nom"
-                    type="text"
-                    placeholder="Votre nom"
-                    required
-                    value={formData.nom}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="email" className="block text-sm font-medium">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="votre@email.com"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="sujet" className="block text-sm font-medium">
-                    Sujet
-                  </label>
-                  <input
-                    id="sujet"
-                    name="sujet"
-                    type="text"
-                    placeholder="Sujet de votre message"
-                    required
-                    value={formData.sujet}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="block text-sm font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Parlez-moi de votre projet..."
-                    required
-                    rows={5}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2.5 bg-background border border-border rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-colors"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium border border-foreground rounded-full hover:bg-foreground hover:text-background transition-colors overflow-hidden relative group cursor-pointer"
-                >
-                  <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-[150%]">
-                    Envoyer le message
-                  </span>
-                  <span className="absolute inset-0 flex items-center justify-center translate-y-[150%] transition-transform duration-300 group-hover:translate-y-0">
-                    Envoyer le message
-                  </span>
-                  <span className="opacity-0">Envoyer le message</span>
-                </button>
-              </form>
-            )}
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              Vous avez un projet d{"'"}application mobile en tête ? Je suis disponible pour en discuter.
+              Envoyez-moi un email et je vous répondrai rapidement.
+            </p>
+            <a
+              href="mailto:prince.degboe@email.com"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3 text-sm font-medium border border-foreground rounded-full hover:bg-foreground hover:text-background transition-colors overflow-hidden relative group"
+            >
+              <span className="absolute inset-0 flex items-center justify-center gap-2 transition-transform duration-300 group-hover:-translate-y-[150%]">
+                <Mail className="w-4 h-4" /> M{"'"}envoyer un email
+              </span>
+              <span className="absolute inset-0 flex items-center justify-center gap-2 translate-y-[150%] transition-transform duration-300 group-hover:translate-y-0">
+                <Mail className="w-4 h-4" /> M{"'"}envoyer un email
+              </span>
+              <span className="opacity-0 flex items-center gap-2"><Mail className="w-4 h-4" /> M{"'"}envoyer un email</span>
+            </a>
           </div>
 
           {/* Right - Contact Info */}
@@ -164,14 +63,14 @@ export function ContactSection() {
               </div>
 
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Ma boîte de réception est toujours ouverte. Que vous ayez un projet ou que vous souhaitiez simplement dire bonjour, n{"'"}hésitez pas à me contacter. Je vous répondrai rapidement.
+                Ma boîte de réception est toujours ouverte. Que vous ayez un projet mobile ou que vous souhaitiez simplement dire bonjour, n{"'"}hésitez pas à me contacter.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <a href="mailto:farihane@farihane.com" className="font-medium hover:text-accent transition-colors">
-                    farihane@farihane.com
+                  <a href="mailto:prince.degboe@email.com" className="font-medium hover:text-accent transition-colors">
+                    prince.degboe@email.com
                   </a>
                 </div>
                 <div>

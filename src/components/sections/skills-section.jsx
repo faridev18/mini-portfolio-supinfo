@@ -5,34 +5,34 @@ import { cn } from "@/lib/utils"
 
 const skills = [
   {
+    icon: Smartphone,
+    title: "Développement Mobile",
+    description: "Création d'applications mobiles cross-platform performantes et fluides pour iOS et Android avec Flutter.",
+    techs: ["Flutter", "Dart", "Firebase", "Supabase", "SQLite"],
+  },
+  {
     icon: Code,
-    title: "Développement Web",
-    description: "Création de sites et applications web modernes avec React, Next.js, Laravel, Node.js, et plus encore.",
-    techs: ["React.js", "Next.js", "Node.js", "Laravel", "PHP", "JavaScript", "TypeScript"],
+    title: "Développement Backend",
+    description: "Conception d'APIs et de services backend pour alimenter les applications mobiles Flutter.",
+    techs: ["Node.js", "Express", "REST API", "Firebase Functions", "PostgreSQL"],
   },
   {
     icon: Palette,
-    title: "UI/UX Design",
-    description: "Conception d'interfaces utilisateur élégantes et centrées sur l'utilisateur avec Figma et les outils Adobe.",
-    techs: ["Figma", "Adobe XD", "Photoshop", "Illustrator"],
+    title: "UI/UX Mobile",
+    description: "Conception d'interfaces mobiles élégantes, accessibles et centrées sur l'utilisateur.",
+    techs: ["Figma", "Material Design 3", "Cupertino", "Flutter Animations", "Prototypage"],
   },
   {
     icon: Layers,
-    title: "3D & WebGL",
-    description: "Expériences 3D interactives utilisant Three.js et React Three Fiber pour le web.",
-    techs: ["Three.js", "React Three Fiber", "WebGL", "GSAP"],
-  },
-  {
-    icon: Smartphone,
-    title: "Développement Mobile",
-    description: "Applications mobiles cross-platform avec React Native et Ionic pour iOS et Android.",
-    techs: ["React Native", "Ionic", "Angular", "Firebase"],
+    title: "Architecture & État",
+    description: "Structuration d'applications Flutter maintenables avec des patterns éprouvés.",
+    techs: ["BLoC", "Riverpod", "GetX", "Provider", "Clean Architecture"],
   },
   {
     icon: Globe,
     title: "Intégration & Déploiement",
-    description: "Mise en production d'applications avec CI/CD, Docker, et services cloud modernes.",
-    techs: ["Git/GitHub", "Docker", "Vercel", "Netlify", "AWS"],
+    description: "Publication et mise en production sur App Store et Google Play avec CI/CD.",
+    techs: ["App Store", "Google Play", "GitHub Actions", "Fastlane", "Codemagic"],
   },
 ]
 
@@ -44,7 +44,7 @@ export function SkillsSection() {
       <div className="container mx-auto px-6">
         <div className="mb-12">
           <SectionBadge>Compétences</SectionBadge>
-          <h2 className="text-3xl md:text-5xl font-title font-medium mt-4">Domaines d{"'"}expertise</h2>
+          <h2 className="text-3xl md:text-5xl font-title font-medium mt-4">Expertise mobile & tech</h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -105,13 +105,13 @@ export function SkillsSection() {
               Technologies que j{"'"}utilise
             </h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Je construis des expériences numériques puissantes, scalables et visuellement engageantes en utilisant les technologies modernes du web, du mobile et du 3D interactif.
+              Je construis des applications mobiles performantes et soignées pour iOS et Android en utilisant Flutter comme technologie principale.
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                "React.js", "Next.js", "TypeScript", "JavaScript", "Node.js",
-                "Laravel", "PHP", "Python", "Tailwind CSS", "Three.js",
-                "React Native", "Figma", "Git/GitHub", "Docker", "Firebase",
+                "Flutter", "Dart", "Firebase", "Supabase", "REST API",
+                "GetX", "Riverpod", "BLoC", "Figma", "Git/GitHub",
+                "App Store", "Google Play", "CI/CD", "SQLite", "Fastlane",
               ].map((tech) => (
                 <span
                   key={tech}

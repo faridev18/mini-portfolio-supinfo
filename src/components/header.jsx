@@ -56,7 +56,7 @@ export function Header() {
         >
           <div className="flex items-center justify-between">
             <a href="#accueil" className="text-xl font-bold tracking-tight">
-              FZ
+              PD
             </a>
 
             <nav className="flex items-center gap-8">

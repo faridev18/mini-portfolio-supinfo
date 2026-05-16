@@ -17,11 +17,11 @@ const TwitterIcon = (props) => (
 )
 
 const socialLinks = [
-  { href: "https://www.linkedin.com/in/farihane-zannou-708475215/", icon: LinkedinIcon, label: "LinkedIn" },
-  { href: "https://github.com/faridev18", icon: GithubIcon, label: "GitHub" },
-  { href: "https://www.instagram.com/farihane.zannou/", icon: InstagramIcon, label: "Instagram" },
-  { href: "mailto:farihane@farihane.com", icon: Mail, label: "Email" },
-  { href: "https://twitter.com/farihane_z", icon: TwitterIcon, label: "Twitter" },
+  { href: "https://www.linkedin.com/in/prince-degboe/", icon: LinkedinIcon, label: "LinkedIn" },
+  { href: "https://github.com/prince-degboe", icon: GithubIcon, label: "GitHub" },
+  { href: "https://www.instagram.com/prince.degboe/", icon: InstagramIcon, label: "Instagram" },
+  { href: "mailto:prince.degboe@email.com", icon: Mail, label: "Email" },
+  { href: "https://twitter.com/prince_degboe", icon: TwitterIcon, label: "Twitter" },
 ]
 
 export function Footer() {
@@ -29,7 +29,7 @@ export function Footer() {
     <footer className="border-t border-border bg-background">
       <div className="container mx-auto px-4 md:px-6 py-6 md:py-8 flex flex-col-reverse md:flex-row items-center justify-between gap-4 md:gap-6">
         <p className="text-xs md:text-sm text-muted-foreground text-center md:text-left">
-          © 2026 Farihane S. ZANNOU. All rights reserved.
+          © 2026 Prince DEGBOE. All rights reserved.
         </p>
         <div className="flex items-center gap-3 md:gap-4">
           {socialLinks.map((link) => (

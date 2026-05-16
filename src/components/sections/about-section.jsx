@@ -10,7 +10,7 @@ export function AboutSection() {
           <div className="relative aspect-square rounded-2xl overflow-hidden bg-secondary">
             <img
               src={profile}
-              alt="Farihane S. ZANNOU"
+              alt="Prince DEGBOE"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-accent/10 mix-blend-multiply" />
@@ -20,17 +20,17 @@ export function AboutSection() {
           <div>
             <SectionBadge>À propos de moi</SectionBadge>
             <h2 className="text-3xl md:text-4xl font-title font-medium mt-4 mb-6">
-              Passionné par le <span className="text-accent">digital</span>
+              Passionné par le <span className="text-accent">mobile</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Je suis <span className="text-foreground font-medium">Farihane S. ZANNOU</span>, avec plus de
-              5 ans d{"'"}expérience en design et développement, avec un focus sur la production
-              d{"'"}expériences digitales de haute qualité et impactantes.
+              Je suis <span className="text-foreground font-medium">Prince DEGBOE</span>, développeur mobile
+              spécialisé dans la création d{"'"}applications iOS et Android avec Flutter,
+              avec un focus sur la performance et l{"'"}expérience utilisateur.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              J{"'"}ai travaillé avec certains des leaders les plus innovants de l{"'"}industrie
-              pour les aider à construire leurs produits de premier plan. Mon approche combine
-              créativité, rigueur technique et sens du détail.
+              J{"'"}ai conçu et livré des applications mobiles pour des clients variés, en combinant
+              rigueur technique, design soigné et une attention particulière aux bonnes pratiques
+              du développement cross-platform.
             </p>
             <div className="flex flex-wrap gap-6">
               <div>

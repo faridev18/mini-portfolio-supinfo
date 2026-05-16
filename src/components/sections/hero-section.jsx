@@ -7,20 +7,20 @@ export function HeroSection() {
         <div className="max-w-4xl">
           <p className="mb-4 flex items-center gap-2">
             <Hand className="w-5 h-5 text-accent animate-wave" />
-            Hey ! C{"'"}est moi, Farihane.
+            Hey ! C{"'"}est moi, Prince.
           </p>
           <h1 className="text-4xl md:text-5xl font-title lg:text-6xl font-medium leading-tight mb-8">
-            Je conçois des <span className="text-accent">expériences significatives</span> qui inspirent et engagent.
+            Je crée des <span className="text-accent">applications mobiles</span> qui inspirent et engagent.
           </h1>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mt-12">
           <div className="flex items-center gap-6 flex-wrap">
             {[
-              { href: "https://www.linkedin.com/in/farihane-zannou-708475215/", label: "LINKEDIN" },
-              { href: "https://github.com/faridev18", label: "GITHUB" },
-              { href: "https://www.instagram.com/farihane.zannou/", label: "INSTAGRAM" },
-              { href: "mailto:farihane@farihane.com", label: "EMAIL" },
+              { href: "https://www.linkedin.com/in/prince-degboe/", label: "LINKEDIN" },
+              { href: "https://github.com/prince-degboe", label: "GITHUB" },
+              { href: "https://www.instagram.com/prince.degboe/", label: "INSTAGRAM" },
+              { href: "mailto:prince.degboe@email.com", label: "EMAIL" },
             ].map((link) => (
               <a
                 key={link.label}
@@ -37,7 +37,7 @@ export function HeroSection() {
 
           <div className="flex flex-col md:items-end gap-4">
             <p className="text-sm max-w-sm md:text-right text-muted-foreground">
-              Je collabore avec des marques du monde entier pour offrir des expériences numériques raffinées, accessibles et à fort impact.
+              Je conçois et développe des applications mobiles performantes, accessibles et à fort impact pour iOS et Android.
             </p>
             <a
               href="#contact"

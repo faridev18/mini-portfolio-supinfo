@@ -95,7 +95,7 @@ export function ExperienceSection() {
                   key={index}
                   className="relative pl-8 pb-6 border-l-2 border-border last:border-0 last:pb-0"
                 >
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent border-4 border-background" />
+                  <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-accent border-4 border-background" />
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-1">
                     <div>
                       <h4 className="font-medium">{item.title}</h4>
